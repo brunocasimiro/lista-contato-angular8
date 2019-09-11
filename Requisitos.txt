@@ -1,0 +1,26 @@
+- Ionic
+- Models
+- Services
+- Directives
+- Pipes
+- Pages
+- Components
+- Validators
+- Guards
+====================
+Modelagem: Contato
+- Id
+- Nome
+- Email
+- CPF
+- Telefone
+- Endereço Completo
+- Imagem
+=========================
+Funcionalidades
+- Login
+- Logout
+- Signup
+- Reset Password
+- CRUD de Contatos
+- Loading
