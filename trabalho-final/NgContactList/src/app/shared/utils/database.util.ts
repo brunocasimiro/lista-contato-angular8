@@ -81,6 +81,8 @@ export class DatabaseUtil {
         for (let index = 0; index < contacts.length; index++) {
             if (contacts[index].id === contact.id) {
                 contacts[index] = contact;
+                if (!contact.image)
+                    contact.image = 'https://www.pena.com.br/wp-content/uploads/2017/05/user-icon-300x300.jpg';
                 break;
             }
         }

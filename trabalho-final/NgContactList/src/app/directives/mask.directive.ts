@@ -1,4 +1,5 @@
 import { Directive, ElementRef, HostListener, Input } from '@angular/core';
+import { IfStmt } from '@angular/compiler';
 
 @Directive({
     selector: '[mask]',
@@ -24,6 +25,9 @@ export class MaskDirective {
     }
 
     format(mask: string, value: any): string {
+        if(mask === '*')
+            return value;
+
         let text = '';
         let data = value;
         let c, m, i, x;

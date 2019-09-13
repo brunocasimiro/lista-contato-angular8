@@ -24,7 +24,7 @@ export class InputTextComponent extends BaseUtil implements OnInit, OnChanges {
   @Input() style: any;
   @Input() readOnly = false;
   @Input() type: InputType;
-  @Input() mask: string;
+  @Input() mask: string = '*';
   @Input() emailValidate: boolean= false;
 
   nameDisabled = 'disabled';
