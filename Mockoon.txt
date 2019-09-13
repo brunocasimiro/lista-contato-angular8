@@ -1,0 +1,173 @@
+{
+    "id": "mockoon_export",
+    "appVersion": "1.4.0",
+    "checksum": "b03c90fd35ffa815c0facc7b718fac8d",
+    "subject": "environment",
+    "data": {
+        "uuid": "5a331830-d587-11e9-9ade-8534ee9adef2",
+        "name": "NgContactList",
+        "endpointPrefix": "",
+        "latency": 0,
+        "port": 3000,
+        "routes": [
+            {
+                "uuid": "6eceab10-d587-11e9-9ade-8534ee9adef2",
+                "documentation": "",
+                "method": "post",
+                "endpoint": "accounts/authenticate",
+                "body": "{\n    \"message\": \"Usuário criado com sucesso!\",\n    \"success\": \"true\",\n    \"data\": {\n        \"user\": \"Bruno Casimiro\",\n        \"username\": \"brunocasimiro\",\n        \"token\": \"gkfjgdsfnglçsejetnvlgkjfdglbhdfgkjhdnfgkjhrndt43859345\"\n    }\n}",
+                "latency": 1000,
+                "statusCode": "200",
+                "headers": [
+                    {
+                        "key": "",
+                        "value": ""
+                    }
+                ],
+                "filePath": "",
+                "sendFileAsBody": false
+            },
+            {
+                "uuid": "",
+                "documentation": "",
+                "method": "post",
+                "endpoint": "account",
+                "body": "{\n    \"message\": \"Usuário criado com sucesso!\",\n    \"success\": \"true\",\n    \"data\": null\n}",
+                "latency": 1000,
+                "statusCode": "200",
+                "headers": [
+                    {
+                        "key": "",
+                        "value": ""
+                    }
+                ],
+                "filePath": "",
+                "sendFileAsBody": false
+            },
+            {
+                "uuid": "036cefc0-d641-11e9-aeec-393e7465d4a0",
+                "documentation": "",
+                "method": "post",
+                "endpoint": "account/reset-password",
+                "body": "{\n    \"message\": \"Senha alterada com sucesso!\",\n    \"success\": \"true\",\n    \"data\": null\n}",
+                "latency": 1000,
+                "statusCode": "200",
+                "headers": [
+                    {
+                        "key": "",
+                        "value": ""
+                    }
+                ],
+                "filePath": "",
+                "sendFileAsBody": false
+            },
+            {
+                "uuid": "763c3f40-d648-11e9-aeec-393e7465d4a0",
+                "documentation": "",
+                "method": "get",
+                "endpoint": "contacts",
+                "body": "{\n    \"message\": \"Contatos recuperados com sucesso!\",\n    \"success\": \"true\",\n    \"data\": []\n}",
+                "latency": 1000,
+                "statusCode": "200",
+                "headers": [
+                    {
+                        "key": "",
+                        "value": ""
+                    }
+                ],
+                "filePath": "",
+                "sendFileAsBody": false
+            },
+            {
+                "uuid": "3800a3f0-d64e-11e9-aeec-393e7465d4a0",
+                "documentation": "",
+                "method": "post",
+                "endpoint": "contact",
+                "body": "{\n    \"message\": \"Contato criado com sucesso!\",\n    \"success\": \"true\",\n    \"data\": {}\n}",
+                "latency": 1000,
+                "statusCode": "200",
+                "headers": [
+                    {
+                        "key": "",
+                        "value": ""
+                    }
+                ],
+                "filePath": "",
+                "sendFileAsBody": false
+            },
+            {
+                "uuid": "38c169a0-d653-11e9-aeec-393e7465d4a0",
+                "documentation": "",
+                "method": "get",
+                "endpoint": "contact",
+                "body": "{\n    \"message\": \"Contato recuperado com sucesso!\",\n    \"success\": \"true\",\n    \"data\": {}\n}",
+                "latency": 0,
+                "statusCode": "200",
+                "headers": [
+                    {
+                        "key": "",
+                        "value": ""
+                    }
+                ],
+                "filePath": "",
+                "sendFileAsBody": false
+            },
+            {
+                "uuid": "5d20a4b0-d657-11e9-aeec-393e7465d4a0",
+                "documentation": "",
+                "method": "delete",
+                "endpoint": "contact",
+                "body": "{\n    \"message\": \"Contato removido com sucesso!\",\n    \"success\": \"true\",\n    \"data\": null\n}",
+                "latency": 1000,
+                "statusCode": "200",
+                "headers": [
+                    {
+                        "key": "",
+                        "value": ""
+                    }
+                ],
+                "filePath": "",
+                "sendFileAsBody": false
+            },
+            {
+                "uuid": "5dfd5e30-d659-11e9-aeec-393e7465d4a0",
+                "documentation": "",
+                "method": "put",
+                "endpoint": "contact",
+                "body": "{\n    \"message\": \"Contato alterado com sucesso!\",\n    \"success\": \"true\",\n    \"data\": {}\n}",
+                "latency": 1000,
+                "statusCode": "200",
+                "headers": [
+                    {
+                        "key": "",
+                        "value": ""
+                    }
+                ],
+                "filePath": "",
+                "sendFileAsBody": false
+            }
+        ],
+        "proxyMode": false,
+        "proxyHost": "",
+        "https": false,
+        "cors": true,
+        "headers": [
+            {
+                "key": "Content-Type",
+                "value": "application/json"
+            },
+            {
+                "key": "Access-Control-Allow-Origin",
+                "value": "*"
+            },
+            {
+                "key": "Access-Control-Allow-Methods",
+                "value": "GET,POST,PUT,PATCH,DELETE,HEAD,OPTIONS"
+            },
+            {
+                "key": "Access-Control-Allow-Headers",
+                "value": "Content-Type, Origin, Accept, Authorization, Content-Length, X-Requested-With"
+            }
+        ]
+    }
+}
