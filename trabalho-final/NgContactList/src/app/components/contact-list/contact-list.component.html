@@ -1,0 +1,46 @@
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col sizeMd="3" sizeXs="12" *ngFor="let contact of contacts | filter : filterText">
+        <ion-card>
+          <ion-card-header>
+            
+            <ion-card-subtitle>
+              {{ contact.id }}
+            </ion-card-subtitle>
+            <ion-card-title>
+              <ion-icon (click)="edit(contact)" name="create"></ion-icon>
+              <ion-icon (click)="remove(contact)" name="trash"></ion-icon>
+              &nbsp;
+              {{ contact.name }}
+            </ion-card-title>
+          </ion-card-header>
+
+          <ion-item>
+            <ion-avatar>
+              <img src="{{ contact.image }}">
+            </ion-avatar>
+            <ion-label>&nbsp;{{ contact.phone }}</ion-label>
+          </ion-item>
+
+          <ion-card-content>
+            <small>
+              {{ contact.email }} |
+              {{ contact.cpf }}
+              <br>
+              {{ contact.address }}
+            </small>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <ion-fab vertical="bottom" 
+            horizontal="end" 
+            slot="fixed">
+    <ion-fab-button (click)="addContact()" color="danger">
+      <ion-icon name="add-circle"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+</ion-content>

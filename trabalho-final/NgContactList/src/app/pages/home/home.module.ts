@@ -5,6 +5,8 @@ import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 
 import { HomePage } from './home.page';
+import { ContactListComponent } from 'src/app/components/contact-list/contact-list.component';
+import { CourseFilterPipe } from 'src/app/pipes/contact-filter.pipe';
 
 @NgModule({
   imports: [
@@ -18,6 +20,10 @@ import { HomePage } from './home.page';
       }
     ])
   ],
-  declarations: [HomePage]
+  declarations: [
+    ContactListComponent,
+    CourseFilterPipe,
+    HomePage
+  ]
 })
 export class HomePageModule {}

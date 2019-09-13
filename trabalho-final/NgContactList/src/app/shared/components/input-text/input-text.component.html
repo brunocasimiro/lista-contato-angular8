@@ -1,0 +1,37 @@
+<div [formGroup]="form" *ngIf="!readOnly">
+  <ion-item [id]="getIdComponent('item')"
+            [ngStyle]="style"
+            [ngClass]="clazz">
+    <ion-label position="floating" 
+               [id]="getIdComponent('label')">
+      <span *ngIf="required">*</span>{{ placeholder }}
+    </ion-label>
+    <ion-input [id]="id"
+               [formControlName]="name"
+               [value]="value"
+               [readonly]="disabled"
+               [type]="getType()"
+               min="0"
+               [mask]="mask" 
+               minlength="{{ minlength }}" 
+               maxlength="{{ maxlength }}">
+    </ion-input>
+  </ion-item>
+  <div [id]="getIdComponent('required')"
+       class="error-message"
+       *ngIf="isShowMessage()">
+    <ion-icon name="alert" class="error-icon"></ion-icon>  {{ msgRequiredField() }}
+  </div>
+</div>
+
+<div *ngIf="readOnly">
+  <ion-item [ngStyle]="style"
+            [ngClass]="clazz">
+    <ion-label floating>
+      <span *ngIf="required">*</span>{{ placeholder }}
+    </ion-label>
+    <ion-input [value]="value"
+               [readonly]="true">
+    </ion-input>
+  </ion-item>
+</div>

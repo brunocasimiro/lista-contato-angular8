@@ -1,0 +1,47 @@
+<ion-menu>
+  <ion-content>
+    <br>
+    <app-user-card></app-user-card>
+    <ion-list lines="none">
+      <ion-menu-toggle>
+        <ion-item routerLink="/reset-password" detail>
+          <ion-icon slot="start" name="person"></ion-icon> Perfil
+        </ion-item>
+
+        <ion-item routerLink="/" detail>
+          <ion-icon slot="start" name="home"></ion-icon> Home
+        </ion-item>
+      </ion-menu-toggle>
+    </ion-list>
+  </ion-content>
+  <ion-footer>
+    <ion-list>
+      <ion-button ion-item 
+                  fill="clear"
+                  color="dark"
+                  expand="full"
+                  (click)="logout()">
+        Sair <ion-icon slot="icon-only" name="exit"></ion-icon> 
+      </ion-button>
+    </ion-list>
+  </ion-footer>
+</ion-menu>
+
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+      Ng Contact List
+    </ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="logout()">
+        <ion-icon slot="icon-only" name="exit"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <ion-router-outlet main></ion-router-outlet>
+</ion-content>

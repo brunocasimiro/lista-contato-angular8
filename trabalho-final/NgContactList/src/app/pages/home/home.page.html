@@ -1,0 +1,10 @@
+<ion-toolbar>
+  <ion-searchbar placeholder="Filtrar..." [(ngModel)]="filterText"></ion-searchbar>
+</ion-toolbar>
+<ion-content class="ion-padding">
+    <div class="ion-padding custom-skeleton" *ngIf="!contacts">
+        <ion-skeleton-text animated style="width: 60%"></ion-skeleton-text>
+        <ion-skeleton-text animated></ion-skeleton-text>
+    </div>
+    <app-contact-list [contacts]="contacts" [filterText]="filterText"></app-contact-list>
+</ion-content>
